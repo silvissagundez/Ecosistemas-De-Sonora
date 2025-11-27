@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecosistemas del Estado de Sonora</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e8;
+            color: #333;
+        }
+        header {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #333;
+            text-align: center; /* Centra el contenido del nav */
+            padding: 10px 0;
+        }
+        nav a {
+            display: inline-block; /* Cambia de float a inline-block para centrar */
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            margin: 0 5px; /* Espacio entre enlaces */
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        button {
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #e68900;
+        }
+        .biodiversidad-info {
+            display: none;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ecosistemas del Estado de Sonora</h1>
+        <p>Explora la diversidad natural de Sonora: desde desiertos hasta costas, hogar de una rica biodiversidad.</p>
+    </header>
+    
+    <nav>
+        <a href="#desierto">Desierto</a>
+        <a href="#bosques">Bosques</a>
+        <a href="#costas">Costas</a>
+        <a href="#rios">Ríos y Humedales</a>
+    </nav>
+    
+    <section id="desierto">
+        <h2>Desierto de Sonora</h2>
+        <p>El desierto de Sonora es uno de los más biodiversos del mundo, con cactus gigantes como el saguaro y especies endémicas como el borrego cimarrón. Cubre gran parte del estado y es crucial para la conservación. Este ecosistema árido recibe menos de 300 mm de lluvia al año y alberga más de 2,000 especies de plantas, muchas adaptadas a la sequía. Es hogar de comunidades indígenas como los seris y yaquis, quienes han preservado conocimientos tradicionales sobre su flora y fauna. La conservación es vital debido a la expansión urbana y el cambio climático, que amenazan su equilibrio ecológico.</p>
+        <img src="https://sl.bing.net/e5pGHN6l8Q8" alt="Desierto de Sonora">
+        <button onclick="toggleInfo('desierto-info')">Mostrar diversidad</button>
+        <div id="desierto-info" class="biodiversidad-info">
+            <p>Fauna: Coyote, puma, tortuga del desierto. Flora: Cactus, mezquite, palo verde. Amenazas: Desertificación por cambio climático.</p>
+        </div>
+        <p><a href="https://es.wikipedia.org/wiki/Desierto_de_Sonora" target="_blank">Más información sobre el Desierto de Sonora</a></p>
+    </section>
+    
+    <section id="bosques">
+        <h2>Bosques y Montañas</h2>
+        <p>En las sierras de Sonora, como la Sierra Madre Occidental, se encuentran bosques de pino y encino. Estos ecosistemas albergan especies como el oso negro y aves migratorias. Las elevaciones varían de 500 a 2,600 metros, creando microclimas que soportan bosques templados con pinos ponderosa y encinos. Son refugios para la biodiversidad, incluyendo mamíferos grandes y aves endémicas. Estos bosques proporcionan servicios ecosistémicos como captación de carbono y regulación del agua, pero enfrentan deforestación por tala ilegal y agricultura. Áreas protegidas como el Parque Nacional Sierra de San Pedro Mártir ayudan en su preservación.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Sierra_Madre_Occidental.jpg/800px-Sierra_Madre_Occidental.jpg" alt="Bosques en Sonora">
+        <button onclick="toggleInfo('bosques-info')">Mostrar diversidad</button>
+        <div id="bosques-info" class="biodiversidad-info">
+            <p>Fauna: Oso negro, venado cola blanca, aves rapaces. Flora: Pino ponderosa, encino, manzanita. Amenazas: Deforestación y incendios forestales.</p>
+        </div>
+        <p><a href="https://es.wikipedia.org/wiki/Sierra_Madre_Occidental" target="_blank">Más información sobre Bosques y Montañas de Sonora</a></p>
+    </section>
+    
+    <section id="costas">
+        <h2>Ecosistemas Costeros</h2>
+        <p>La costa del Golfo de California incluye manglares, playas y arrecifes. Lugares como Puerto Peñasco ofrecen hábitats para ballenas, tortugas marinas y aves playeras. Este ecosistema marino-costero es rico en biodiversidad, con manglares que actúan como barreras naturales contra huracanes y albergan especies como el cangrejo azul. Las playas son sitios de anidación para tortugas marinas, y los arrecifes coralinos sostienen peces tropicales. Sin embargo, enfrenta contaminación por turismo y pesca excesiva. Iniciativas de conservación, como reservas marinas, buscan proteger especies migratorias como la ballena gris.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Gulf_of_California.jpg/800px-Gulf_of_California.jpg" alt="Costa de Sonora">
+        <button onclick="toggleInfo('costas-info')">Mostrar diversidad</button>
+        <div id="costas-info" class="biodiversidad-info">
+            <p>Fauna: Ballena gris, tortuga marina, pelícano. Flora: Manglar, algas marinas, pastos marinos. Amenazas: Contaminación marina y sobrepesca.</p>
+        </div>
+        <p><a href="https://es.wikipedia.org/wiki/Golfo_de_California" target="_blank">Más información sobre Ecosistemas Costeros de Sonora</a></p>
+    </section>
+    
+    <section id="rios">
+        <h2>Ríos y Humedales</h2>
+        <p>Ríos como el Yaqui y el Mayo sostienen humedales con peces, aves acuáticas y vegetación ribereña. Son vitales para la agricultura y la vida silvestre. Estos sistemas fluviales, alimentados por lluvias estacionales y nieve derretida, crean humedales que son oasis de biodiversidad en un estado árido. Albergan especies como el pez totoaba y aves migratorias. Sin embargo, la construcción de presas y la contaminación agrícola han reducido su flujo, afectando la pesca y la agricultura local. Programas de restauración hídrica buscan recuperar estos ecosistemas esenciales para el equilibrio ambiental.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Rio_Yaqui.jpg/800px-Rio_Yaqui.jpg" alt="Río Yaqui en Sonora">
+        <button onclick="toggleInfo('rios-info')">Mostrar diversidad</button>
+        <div id="rios-info" class="biodiversidad-info">
+            <p>Fauna: Pez totoaba, garza blanca, rana leopardo. Flora: Sauce, álamo, juncos. Amenazas: Sequía y contaminación por agricultura.</p>
+        </div>
+        <p><a href="https://es.wikipedia.org/wiki/R%C3%ADo_Yaqui" target="_blank">Más información sobre Ríos y Humedales de Sonora</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Sitio sobre Ecosistemas de Sonora. Información basada en fuentes públicas como CONANP.</p>
+    </footer>
+    
+    <script>
+        function toggleInfo(id) {
+            var info = document.getElementById(id);
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
